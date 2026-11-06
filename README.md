@@ -1,84 +1,92 @@
-# 🏛️ Financial AI Agent Architectures & Trading Blueprints
+# 🏛️ Financial AI Agent Architectures & Quantitative Blueprints
 
 [![Website](https://img.shields.io/badge/Gateway-agentik.my.id-0070f3?style=flat-square&logo=cloudflare&logoColor=white)](https://agentik.my.id)
 [![Payment](https://img.shields.io/badge/TopUp-QRIS%20Instant-E31E24?style=flat-square)](https://agentik.my.id)
 [![Models](https://img.shields.io/badge/Models-Claude%203.5%20%7C%20GPT--4o%20%7C%20DeepSeek-00A67E?style=flat-square)](https://agentik.my.id)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE)
 
-Kumpulan cetak biru (*production-grade blueprints*), pola desain (*design patterns*), dan implementasi kode Python untuk membangun sistem **Autonomous Financial AI Agents**, **Multi-Agent Trading Committee**, dan **Agentic RAG Keuangan**.
+Cetak biru arsitektur lengkap (**12 Bab Komprehensif**), pola desain (*design patterns*), diagram sistem, dan implementasi kode Python untuk membangun **Autonomous Financial AI Agents**, **Multi-Agent Trading Committee**, dan **Agentic RAG Keuangan**.
 
-Diekstrak dan diadaptasi dari riset mutakhir financial engineering global untuk komunitas developer, quant researcher, dan AI builder Indonesia.
+Diekstrak dan diadaptasi dari buku referensi global standar institusi Wall Street: *"Building AI Agents for Finance: Design & Deploy Financial AI Agents with Robust Architectures"*.
 
-Didukung penuh oleh **[Agentik.my.id](https://agentik.my.id)** (AI API Gateway lokal dengan pembayaran instan QRIS).
+Didukung penuh oleh **[Agentik.my.id](https://agentik.my.id)** (AI API Gateway lokal pertama di Indonesia dengan pembayaran instan QRIS).
 
 ---
 
-## 📌 Daftar Arsitektur & Bab
+## 📚 Kurikulum Lengkap (12 Bab Kajian)
 
-| Bab / Pola | Topik Utama | Kasus Penggunaan Riil | File Kode |
+| Bab | Judul Panduan | Fokus Rekayasa AI | Kode Praktis |
 | :--- | :--- | :--- | :--- |
-| **01. Fundamental Agent** | Tool Calling, Rasio Keuangan, 10-K Analysis | Audit otomatis laporan keuangan & valuasi | [`examples/01_fundamental_agent.py`](examples/01_fundamental_agent.py) |
-| **02. Adversarial Debate** | Multi-Agent Bull vs Bear + CIO Verdict | Mencegah bias konfirmasi sebelum eksekusi trading | [`examples/02_adversarial_trading_debate.py`](examples/02_adversarial_trading_debate.py) |
-| **03. Deep Search RAG** | Iterative Retrieval & Query Self-Correction | Riset pasar saham/kripto level analis Wall Street | [`examples/03_deep_search_financial_rag.py`](examples/03_deep_search_financial_rag.py) |
-| **04. Design Patterns** | Memory, ReAct Loop, Hierarchical Supervisors | Dokumen panduan arsitektur sistem | [`patterns.md`](patterns.md) |
-| **05. Decision Matrix** | Tabel keputusan kapan pakai single vs multi-agent | Cheatsheet evaluasi arsitektur | [`cheatsheet.md`](cheatsheet.md) |
+| **Bab 01** | [Fondasi LLM & Agen AI di Keuangan](chapters/ch01_what_are_ai_agents.md) | Mengatasi Knowledge Cutoff & Halusinasi Angka | [`examples/01_non_agentic_vs_agentic.py`](examples/01_non_agentic_vs_agentic.py) |
+| **Bab 02** | [Design Patterns Agen Finansial](chapters/ch02_design_patterns_finance.md) | Tool Use, Memory (Vector DB), & Planning | [`patterns.md`](patterns.md) |
+| **Bab 03** | [Komparasi Framework Agen Finansial](chapters/ch03_agent_frameworks_comparison.md) | LangGraph vs AutoGen vs CrewAI vs LlamaIndex | [`cheatsheet.md`](cheatsheet.md) |
+| **Bab 04** | [Fundamental Analysis Agent](chapters/ch04_fundamental_analysis_system.md) | Audit Otomatis Neraca, Laba Rugi, & Rasio FCF | [`examples/02_fundamental_analysis_agent.py`](examples/02_fundamental_analysis_agent.py) |
+| **Bab 05** | [Deep Search – Riset Saham Wall Street](chapters/ch05_deep_search_analyst_research.md) | Query Expansion & Verifikasi Sumber Primer | [`examples/03_deep_search_researcher.py`](examples/03_deep_search_researcher.py) |
+| **Bab 06** | [Paradigma Penalaran (Reasoning Paradigms)](chapters/ch06_reasoning_paradigms_self_refine.md) | Self-Refine Reflection Loop & Tree of Thoughts | [`examples/04_self_refine_investment_thesis.py`](examples/04_self_refine_investment_thesis.py) |
+| **Bab 07** | [Multi-Agent Systems & Arsitektur Tim](chapters/ch07_multi_agent_architectural_styles.md) | Hierarchical Supervisor vs Peer-to-Peer Networks | [`patterns.md`](patterns.md) |
+| **Bab 08** | [Multi-Agent Trading System (Debat Bull vs Bear)](chapters/ch08_multi_agent_trading_systems.md) | Komite Investasi AI & Putusan Alokasi CIO | [`examples/05_multi_agent_trading_committee.py`](examples/05_multi_agent_trading_committee.py) |
+| **Bab 09** | [Workflow Asuransi & Penyelesaian Klaim](chapters/ch09_insurance_and_settlement_agents.md) | Triage Klaim Medis, Deteksi Fraud, & Audit Trail | [`chapters/ch09_insurance_and_settlement_agents.md`](chapters/ch09_insurance_and_settlement_agents.md) |
+| **Bab 10** | [Agentic RAG untuk Laporan Keuangan](chapters/ch10_agentic_rag_sec_filings.md) | Structure-Aware Table Chunking & Corrective RAG | [`chapters/ch10_agentic_rag_sec_filings.md`](chapters/ch10_agentic_rag_sec_filings.md) |
+| **Bab 11** | [Evaluasi & Guardrails Agen (Kasus KYC)](chapters/ch11_evaluating_financial_agents_kyc.md) | Faithfulness Metrics & Hallucination Guardrails | [`chapters/ch11_evaluating_financial_agents_kyc.md`](chapters/ch11_evaluating_financial_agents_kyc.md) |
+| **Bab 12** | [Menjalankan Agen di Lingkungan Produksi](chapters/ch12_production_harness_and_safety.md) | Idempotency Keys, Failover Fallback, & Timeouts | [`examples/08_production_harness_resilience.py`](examples/08_production_harness_resilience.py) |
 
 ---
 
-## 🧠 Mental Model: Mengapa Multi-Agent di Bidang Trading?
-
-### 1. Masalah Single Agent (Confirmation Bias)
-Satu model LLM yang diminta menganalisis saham cenderung mengalami *hallucination* atau membenarkan hipotesis awal pengguna (*yes-man syndrome*).
-
-### 2. Solusi: Arsitektur Komite Investasi (Investment Committee)
-Dalam hedge fund kelas institusi, keputusan investasi tidak pernah diambil satu orang. Arsitektur multi-agent membagi tugas ke dalam 4 lensa informasi:
-1. **Fundamental Lens:** Neraca, laba-rugi, arus kas, margin, dan rasio solvabilitas.
-2. **Quantitative Lens:** Volatilitas, rezim likuiditas, order flow, dan tren momentum.
-3. **Macro Lens:** Siklus suku bunga, tren komoditas, inflasi, dan rantai pasok global.
-4. **Sentiment / Alternative Lens:** Berita breaking news, sentimen sosial, dan aktivitas insider.
+## 🏛️ Desain Arsitektur: Multi-Agent Investment Committee
 
 ```
-       ┌───────────────────────┐
-       │   Market / News Data  │
-       └───────────┬───────────┘
-                   │
-         ┌─────────┴─────────┐
-         ▼                   ▼
-┌─────────────────┐ ┌─────────────────┐
-│   Bull Analyst  │ │   Bear Analyst  │
-│  (Upside Alpha) │ │ (Risk & Downsides│
-└────────┬────────┘ └────────┬────────┘
-         │                   │
-         └─────────┬─────────┘
-                   ▼
-       ┌───────────────────────┐
-       │ Chief Investment Off. │
-       │ (Sizing & Allocation) │
-       └───────────────────────┘
+                         ┌─────────────────────────────────┐
+                         │   Real-Time Data Feed & News    │
+                         └────────────────┬────────────────┘
+                                          │
+                 ┌────────────────────────┼────────────────────────┐
+                 ▼                        ▼                        ▼
+       ┌──────────────────┐     ┌──────────────────┐     ┌──────────────────┐
+       │Fundamental Analyst│    │Quantitative Agent│     │ Sentiment Analyst│
+       │ (10-K / Ratios)  │     │(Regime/Volatility│     │(News/Social Flow)│
+       └─────────┬────────┘     └────────┬─────────┘     └────────┬─────────┘
+                 │                       │                        │
+                 └───────────────────────┼────────────────────────┘
+                                         │
+                         ┌───────────────┴───────────────┐
+                         ▼                               ▼
+              ┌─────────────────────┐         ┌─────────────────────┐
+              │   Bullish Advocate  │         │  Bearish Risk Guard │
+              │ (Growth & Catalysts)│         │(Downside & Failures)│
+              └──────────┬──────────┘         └──────────┬──────────┘
+                         │                               │
+                         └───────────────┬───────────────┘
+                                         ▼
+                         ┌───────────────────────────────┐
+                         │    Chief Investment Officer   │
+                         │   (Final Capital Sizing / HITL)│
+                         └───────────────────────────────┘
 ```
 
 ---
 
-## ⚡ Quickstart: Menjalankan Agent dengan Saldo QRIS
+## ⚡ Eksekusi Cepat dengan API Agentik.my.id (QRIS)
 
-Seluruh kode dalam repositori ini menggunakan format standar OpenAI SDK yang telah diarahkan ke endpoint proxy berkecepatan tinggi **[Agentik.my.id](https://agentik.my.id)**.
+Semua script Python dalam repositori ini siap dijalankan menggunakan OpenAI SDK resmi tanpa membutuhkan kartu kredit internasional.
 
-### 1. Install Dependensi
+### 1. Pasang Library
 ```bash
 pip install openai pandas
 ```
 
-### 2. Eksekusi Script Contoh
+### 2. Jalankan Script Trading Debate
 ```bash
-python examples/02_adversarial_trading_debate.py
+python examples/05_multi_agent_trading_committee.py
 ```
 
-*Catatan: Pastikan Anda telah memasukkan API Key dari dashboard [Agentik.my.id](https://agentik.my.id) (Bisa top-up mulai Rp10.000 via GoPay, DANA, OVO, atau m-Banking).*
+*Dapatkan API Key dan isi saldo instan mulai Rp10.000 via QRIS (GoPay, DANA, OVO, m-Banking) di [Agentik.my.id](https://agentik.my.id).*
 
 ---
 
-## 🤝 Kontribusi & Dukungan
-Repositori ini dikelola secara terbuka untuk memajukan riset kuantitatif dan rekayasa AI di Indonesia.
+## 📖 Kamus & Panduan Tambahan
+- **[Kamus Istilah Finansial & Agen AI (Glossary)](glossary.md):** 15+ istilah teknis quant & AI agent.
+- **[Design Patterns Lengkap (patterns.md)](patterns.md):** Panduan implementasi ReAct, Self-Refine, dan Tool Calling.
+- **[Matriks Keputusan (cheatsheet.md)](cheatsheet.md):** Kapan menggunakan Single-Agent vs Multi-Agent.
 
-- **Website Resmi:** [https://agentik.my.id](https://agentik.my.id)
-- **Repositori Terkait:** [Cara Pakai Claude di Cursor Tanpa Kartu Kredit](https://github.com/agentikmyid/cara-pakai-claude-cursor-tanpa-kartu-kredit)
+---
+*Dikelola oleh tim [Agentik.my.id](https://agentik.my.id) untuk riset rekayasa AI & quant trading Indonesia.*
