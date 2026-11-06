@@ -6,10 +6,10 @@ client = OpenAI(
     api_key=os.getenv("AGENTIK_API_KEY", "agtk_live_your_key_here")
 )
 
-# 1. Non-Agentic Call (Passive LLM - Rentan Halusinasi & Outdated)
+# 1. Non-Agentic Call (Passive LLM - Rentan Outdated/Hallucination)
 def non_agentic_analysis(query):
     return client.chat.completions.create(
-        model="claude-3-5-sonnet-20241022",
+        model="claude-sonnet-4-6",
         messages=[{"role": "user", "content": query}]
     ).choices[0].message.content
 
@@ -19,7 +19,7 @@ tools = [
         "type": "function",
         "function": {
             "name": "get_stock_quote",
-            "description": "Mengambil harga saham terkini dan volume harian.",
+            "description": "Mengambil harga saham terkini dan volume bursa.",
             "parameters": {
                 "type": "object",
                 "properties": {
@@ -31,18 +31,14 @@ tools = [
     }
 ]
 
-def mock_get_stock_quote(symbol):
-    # Simulasi data bursa riil
-    return {"symbol": symbol, "price": 9850, "currency": "IDR", "change_pct": 1.54, "volume": 54200000}
-
 print("=== CONTOH BAB 1: NON-AGENTIC VS AGENTIC TOOL CALLING ===")
 response = client.chat.completions.create(
-    model="claude-3-5-sonnet-20241022",
+    model="claude-sonnet-4-6",
     messages=[{"role": "user", "content": "Berapa harga saham BBCA hari ini dan bagaimana performanya?"}],
     tools=tools
 )
 
 msg = response.choices[0].message
 if msg.tool_calls:
-    print("Agen memutuskan memanggil Tool:", msg.tool_calls[0].function.name)
-    print("Argumen:", msg.tool_calls[0].function.arguments)
+    print("✅ Agen berhasil memicu Tool Call:", msg.tool_calls[0].function.name)
+    print("Argumen Parameter:", msg.tool_calls[0].function.arguments)
