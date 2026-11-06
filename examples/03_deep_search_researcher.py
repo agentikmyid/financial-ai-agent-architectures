@@ -18,11 +18,11 @@ def deep_search_query_expander(user_topic):
     """
 
     res = client.chat.completions.create(
-        model="claude-3-5-sonnet-20241022",
-        messages=[{"role": "user", "content": prompt}],
-        response_format={"type": "json_object"}
+        model="claude-sonnet-4-6",
+        messages=[{"role": "user", "content": prompt}]
     )
     return res.choices[0].message.content
 
-print("=== CONTOH BAB 5: DEEP SEARCH QUERY EXPANDER ===")
-print(deep_search_query_expander("Ekspansi Ekosistem Solana & Tren DeFi Meteora"))
+if __name__ == "__main__":
+    print("=== CONTOH BAB 5: DEEP SEARCH QUERY EXPANDER ===")
+    print(deep_search_query_expander("Ekspansi Ekosistem Solana & Tren DeFi Meteora"))
