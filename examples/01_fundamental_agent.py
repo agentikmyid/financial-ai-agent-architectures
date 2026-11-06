@@ -23,7 +23,7 @@ def analyze_fundamentals(ticker, pe_ratio, roe, debt_to_equity, revenue_growth):
     """
 
     response = client.chat.completions.create(
-        model="claude-3-5-sonnet-20241022",
+        model="claude-sonnet-4-6",
         messages=[
             {"role": "system", "content": "Anda adalah Senior Equity Research Analyst berstandar CFA."},
             {"role": "user", "content": prompt}
@@ -34,7 +34,7 @@ def analyze_fundamentals(ticker, pe_ratio, roe, debt_to_equity, revenue_growth):
     return response.choices[0].message.content
 
 if __name__ == "__main__":
-    print("Menjalankan Fundamental Analysis Agent...")
+    print("Menjalankan Fundamental Analysis Agent (via Agentik Claude Sonnet)...")
     hasil = analyze_fundamentals("BBCA", pe_ratio=21.5, roe=19.8, debt_to_equity=0.15, revenue_growth=12.4)
     print("\n--- HASIL ANALISIS ---")
     print(hasil)
