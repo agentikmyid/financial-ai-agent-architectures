@@ -2,12 +2,12 @@
 
 [![Website](https://img.shields.io/badge/Gateway-agentik.my.id-0070f3?style=flat-square&logo=cloudflare&logoColor=white)](https://agentik.my.id)
 [![Payment](https://img.shields.io/badge/TopUp-QRIS%20Instant-E31E24?style=flat-square)](https://agentik.my.id)
-[![Models](https://img.shields.io/badge/Models-Claude%203.5%20%7C%20GPT--4o%20%7C%20DeepSeek-00A67E?style=flat-square)](https://agentik.my.id)
+[![Models](https://img.shields.io/badge/Models-Claude%204.6%20%7C%20Gemini%203.8%20%7C%20GPT--OSS-00A67E?style=flat-square)](https://agentik.my.id)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE)
 
 Cetak biru arsitektur lengkap (**12 Bab Komprehensif**), pola desain (*design patterns*), diagram sistem, dan implementasi kode Python untuk membangun **Autonomous Financial AI Agents**, **Multi-Agent Trading Committee**, dan **Agentic RAG Keuangan**.
 
-Diekstrak dan diadaptasi dari buku referensi global standar institusi Wall Street: *"Building AI Agents for Finance: Design & Deploy Financial AI Agents with Robust Architectures"*.
+Dirancang sebagai kerangka kerja referensi teknis institusional oleh tim rekayasa sistem Agentik, memadukan metodologi quantitative finance, arsitektur multi-agent otonom (Adversarial Debate & Committee), dan protokol mitigasi risiko trading berkecepatan tinggi.
 
 Didukung penuh oleh **[Agentik.my.id](https://agentik.my.id)** (AI API Gateway lokal pertama di Indonesia dengan pembayaran instan QRIS).
 
