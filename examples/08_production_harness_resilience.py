@@ -1,9 +1,9 @@
 import os, time
 from openai import OpenAI
 
-# Production Harness dengan Fallback & Retries
-PRIMARY_MODEL = "claude-3-5-sonnet-20241022"
-FALLBACK_MODEL = "gpt-4o"
+# Production Harness dengan Model Fallback (Claude Sonnet -> Gemini Flash High)
+PRIMARY_MODEL = "claude-sonnet-4-6"
+FALLBACK_MODEL = "gemini-3.8-flash-high"
 
 client = OpenAI(
     base_url="https://api.agentik.my.id/v1",
@@ -29,6 +29,7 @@ def robust_agent_execute(prompt, max_retries=3):
                 
     raise RuntimeError("Seluruh model cadangan gagal dieksekusi!")
 
-print("=== CONTOH BAB 12: PRODUCTION RESILIENCE HARNESS ===")
-hasil = robust_agent_execute("Berikan 3 metrik utama likuiditas dalam pasar uang.")
-print("Respon Berhasil:\n", hasil[:200], "...")
+if __name__ == "__main__":
+    print("=== CONTOH BAB 12: PRODUCTION RESILIENCE HARNESS ===")
+    hasil = robust_agent_execute("Berikan 3 metrik utama likuiditas dalam pasar uang.")
+    print("Respon Berhasil:\n", hasil[:250], "...")
