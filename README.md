@@ -13,22 +13,24 @@ Didukung penuh oleh **[Agentik.my.id](https://agentik.my.id)** (AI API Gateway l
 
 ---
 
-## 📚 Kurikulum Lengkap (12 Bab Kajian)
+## 📚 Kurikulum Lengkap & Kode Contoh per Bab
 
-| Bab | Judul Panduan | Fokus Rekayasa AI | Kode Praktis |
+Setiap bab memiliki dokumen panduan arsitektur dan **1 script Python mandiri** yang siap dieksekusi langsung menggunakan API Agentik:
+
+| Bab | Dokumen Panduan Arsitektur | Fokus Rekayasa AI | Kode Praktis Mandiri |
 | :--- | :--- | :--- | :--- |
 | **Bab 01** | [Fondasi LLM & Agen AI di Keuangan](chapters/ch01_what_are_ai_agents.md) | Mengatasi Knowledge Cutoff & Halusinasi Angka | [`examples/01_non_agentic_vs_agentic.py`](examples/01_non_agentic_vs_agentic.py) |
-| **Bab 02** | [Design Patterns Agen Finansial](chapters/ch02_design_patterns_finance.md) | Tool Use, Memory (Vector DB), & Planning | [`patterns.md`](patterns.md) |
-| **Bab 03** | [Komparasi Framework Agen Finansial](chapters/ch03_agent_frameworks_comparison.md) | LangGraph vs AutoGen vs CrewAI vs LlamaIndex | [`cheatsheet.md`](cheatsheet.md) |
-| **Bab 04** | [Fundamental Analysis Agent](chapters/ch04_fundamental_analysis_system.md) | Audit Otomatis Neraca, Laba Rugi, & Rasio FCF | [`examples/02_fundamental_analysis_agent.py`](examples/02_fundamental_analysis_agent.py) |
-| **Bab 05** | [Deep Search – Riset Saham Wall Street](chapters/ch05_deep_search_analyst_research.md) | Query Expansion & Verifikasi Sumber Primer | [`examples/03_deep_search_researcher.py`](examples/03_deep_search_researcher.py) |
-| **Bab 06** | [Paradigma Penalaran (Reasoning Paradigms)](chapters/ch06_reasoning_paradigms_self_refine.md) | Self-Refine Reflection Loop & Tree of Thoughts | [`examples/04_self_refine_investment_thesis.py`](examples/04_self_refine_investment_thesis.py) |
-| **Bab 07** | [Multi-Agent Systems & Arsitektur Tim](chapters/ch07_multi_agent_architectural_styles.md) | Hierarchical Supervisor vs Peer-to-Peer Networks | [`patterns.md`](patterns.md) |
-| **Bab 08** | [Multi-Agent Trading System (Debat Bull vs Bear)](chapters/ch08_multi_agent_trading_systems.md) | Komite Investasi AI & Putusan Alokasi CIO | [`examples/05_multi_agent_trading_committee.py`](examples/05_multi_agent_trading_committee.py) |
-| **Bab 09** | [Workflow Asuransi & Penyelesaian Klaim](chapters/ch09_insurance_and_settlement_agents.md) | Triage Klaim Medis, Deteksi Fraud, & Audit Trail | [`chapters/ch09_insurance_and_settlement_agents.md`](chapters/ch09_insurance_and_settlement_agents.md) |
-| **Bab 10** | [Agentic RAG untuk Laporan Keuangan](chapters/ch10_agentic_rag_sec_filings.md) | Structure-Aware Table Chunking & Corrective RAG | [`chapters/ch10_agentic_rag_sec_filings.md`](chapters/ch10_agentic_rag_sec_filings.md) |
-| **Bab 11** | [Evaluasi & Guardrails Agen (Kasus KYC)](chapters/ch11_evaluating_financial_agents_kyc.md) | Faithfulness Metrics & Hallucination Guardrails | [`chapters/ch11_evaluating_financial_agents_kyc.md`](chapters/ch11_evaluating_financial_agents_kyc.md) |
-| **Bab 12** | [Menjalankan Agen di Lingkungan Produksi](chapters/ch12_production_harness_and_safety.md) | Idempotency Keys, Failover Fallback, & Timeouts | [`examples/08_production_harness_resilience.py`](examples/08_production_harness_resilience.py) |
+| **Bab 02** | [Design Patterns Agen Finansial](chapters/ch02_design_patterns_finance.md) | Tool Use, Memory Buffer, & State Ingestion | [`examples/02_design_patterns_memory_tools.py`](examples/02_design_patterns_memory_tools.py) |
+| **Bab 03** | [Komparasi Framework Agen Finansial](chapters/ch03_agent_frameworks_comparison.md) | StateGraph, Siklus Deterministik, & Routing | [`examples/03_framework_orchestration_stategraph.py`](examples/03_framework_orchestration_stategraph.py) |
+| **Bab 04** | [Fundamental Analysis Agent](chapters/ch04_fundamental_analysis_system.md) | Audit Otomatis Neraca, Laba Rugi, & Rasio FCF | [`examples/04_fundamental_analysis_screener.py`](examples/04_fundamental_analysis_screener.py) |
+| **Bab 05** | [Deep Search – Riset Saham Wall Street](chapters/ch05_deep_search_analyst_research.md) | Query Expansion & Verifikasi Sumber Primer | [`examples/05_deep_search_analyst_research.py`](examples/05_deep_search_analyst_research.py) |
+| **Bab 06** | [Paradigma Penalaran (Reasoning Paradigms)](chapters/ch06_reasoning_paradigms_self_refine.md) | Self-Refine Reflection Loop & Tree of Thoughts | [`examples/06_self_refine_reflection_loop.py`](examples/06_self_refine_reflection_loop.py) |
+| **Bab 07** | [Multi-Agent Systems & Arsitektur Tim](chapters/ch07_multi_agent_architectural_styles.md) | Hierarchical Supervisor vs Peer-to-Peer Networks | [`examples/07_hierarchical_multi_agent_supervisor.py`](examples/07_hierarchical_multi_agent_supervisor.py) |
+| **Bab 08** | [Multi-Agent Trading System (Debat Bull vs Bear)](chapters/ch08_multi_agent_trading_systems.md) | Komite Investasi AI & Putusan Alokasi CIO | [`examples/08_adversarial_trading_debate.py`](examples/08_adversarial_trading_debate.py) |
+| **Bab 09** | [Workflow Asuransi & Penyelesaian Klaim](chapters/ch09_insurance_and_settlement_agents.md) | Triage Klaim Medis, Deteksi Fraud, & Audit Trail | [`examples/09_insurance_claim_triage.py`](examples/09_insurance_claim_triage.py) |
+| **Bab 10** | [Agentic RAG untuk Laporan Keuangan](chapters/ch10_agentic_rag_sec_filings.md) | Structure-Aware Table Chunking & Corrective RAG | [`examples/10_agentic_rag_table_parser.py`](examples/10_agentic_rag_table_parser.py) |
+| **Bab 11** | [Evaluasi & Guardrails Agen (Kasus KYC)](chapters/ch11_evaluating_financial_agents_kyc.md) | Faithfulness Metrics & Hallucination Guardrails | [`examples/11_kyc_compliance_guardrails.py`](examples/11_kyc_compliance_guardrails.py) |
+| **Bab 12** | [Menjalankan Agen di Lingkungan Produksi](chapters/ch12_production_harness_and_safety.md) | Idempotency Keys, Failover Fallback, & Timeouts | [`examples/12_production_resilience_harness.py`](examples/12_production_resilience_harness.py) |
 
 ---
 
@@ -67,19 +69,26 @@ Didukung penuh oleh **[Agentik.my.id](https://agentik.my.id)** (AI API Gateway l
 
 ## ⚡ Eksekusi Cepat dengan API Agentik.my.id (QRIS)
 
-Semua script Python dalam repositori ini siap dijalankan menggunakan OpenAI SDK resmi tanpa membutuhkan kartu kredit internasional.
+Semua script Python dalam direktori `examples/` siap dijalankan menggunakan OpenAI SDK resmi tanpa membutuhkan kartu kredit internasional.
 
-### 1. Pasang Library
+### 1. Pasang Dependensi
 ```bash
-pip install openai pandas
+pip install -r requirements.txt
 ```
 
-### 2. Jalankan Script Trading Debate
+### 2. Atur Variabel Lingkungan
+Salin file `.env.example` menjadi `.env`:
 ```bash
-python examples/05_multi_agent_trading_committee.py
+cp .env.example .env
+```
+Lalu masukkan API Key dari dashboard **[Agentik.my.id](https://agentik.my.id)**.
+
+### 3. Jalankan Contoh Skrip (Contoh: Bab 08 - Adversarial Debate)
+```bash
+python examples/08_adversarial_trading_debate.py
 ```
 
-*Dapatkan API Key dan isi saldo instan mulai Rp10.000 via QRIS (GoPay, DANA, OVO, m-Banking) di [Agentik.my.id](https://agentik.my.id).*
+*Top-up saldo instan mulai Rp10.000 via QRIS (GoPay, DANA, OVO, BCA, Livin) langsung di [Agentik.my.id](https://agentik.my.id).*
 
 ---
 
@@ -89,4 +98,4 @@ python examples/05_multi_agent_trading_committee.py
 - **[Matriks Keputusan (cheatsheet.md)](cheatsheet.md):** Kapan menggunakan Single-Agent vs Multi-Agent.
 
 ---
-*Dikelola oleh tim [Agentik.my.id](https://agentik.my.id) untuk riset rekayasa AI & quant trading Indonesia.*
+*Dikelola oleh tim rekayasa sistem [Agentik.my.id](https://agentik.my.id) untuk riset AI otonom & quant trading Indonesia.*
